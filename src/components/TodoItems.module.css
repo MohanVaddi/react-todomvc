@@ -1,0 +1,28 @@
+.title {
+    background-color: rgb(217, 134, 255);
+    max-width: 60%;
+    margin: 5px auto;
+    color: black;
+    align-items: baseline;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 2px black;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.delBtn {
+    float: right;
+    padding: 3px 6px;
+    color: black;
+    background: transparent;
+}
+.strikeThrough {
+    text-decoration: line-through;
+}
+
+@media (min-width: 768px) {
+    .title {
+        max-width: 40%;
+        margin: 10px auto;
+    }
+}

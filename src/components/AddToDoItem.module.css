@@ -1,0 +1,13 @@
+.input {
+   
+    max-width: 60%;
+    margin: 5px auto;
+    color: black;
+    align-items: baseline;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.input input {
+    width: 90%;
+    padding: 6px 8px;
+}
