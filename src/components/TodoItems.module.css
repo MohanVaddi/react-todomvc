@@ -1,24 +1,43 @@
+.markIcon {
+    align-items: center;
+    align-content: center;
+    display: inline-block;
+    font-size: 25px;
+}
 .title {
-    background-color: rgb(217, 134, 255);
-    max-width: 60%;
+    max-width: 80%;
     margin: 5px auto;
     color: black;
-    align-items: baseline;
     border-radius: 6px;
-    box-shadow: 2px 2px 2px 2px black;
     cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 2rem;
+    padding: 6px 8px;
+    text-align: left;
 }
+.text{
+    margin-left: 20px;
+}
+
 .delBtn {
     float: right;
-    padding: 3px 6px;
-    color: black;
+    margin: 0;
     background: transparent;
+    border: none;
 }
+
 .strikeThrough {
     text-decoration: line-through;
+    animation: strike 0.5s linear;
 }
+@keyframes strike {
+    from {
+        text-decoration-color: transparent;
+    }
+    to {
+        text-decoration-color: auto;
+    }
+}
+
 
 @media (min-width: 768px) {
     .title {

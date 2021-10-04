@@ -1,13 +1,28 @@
 .input {
-   
-    max-width: 60%;
+    max-width: 80%;
     margin: 5px auto;
     color: black;
-    align-items: baseline;
     border-radius: 6px;
     cursor: pointer;
-}
-.input input {
-    width: 90%;
+    font-size: 2rem;
     padding: 6px 8px;
+}
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    width: 95%;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+input:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+    .input input {
+        max-width: 40%;
+        margin: 0 auto;
+    }
 }

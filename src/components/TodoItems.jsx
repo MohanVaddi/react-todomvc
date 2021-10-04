@@ -9,16 +9,17 @@ const TodoItems = (props) => {
         ctx.markAsCompleted(props.item);
     };
     return (
-        <div>
-            <div
-                key = {Math.random()}
-                className={`${classes.title} ${
-                    props.item.isCompleted ? classes.strikeThrough : ''
-                }`}
-                onClick={markAsCompleteHandler}>
-                {props.item.title}
-                {/* <button className={classes.delBtn}>Del</button> */}
-            </div>
+        <div
+            key={Math.random()}
+            className={`${classes.title} ${
+                props.item.isCompleted ? classes.strikeThrough : ''
+            }`}
+            onClick={markAsCompleteHandler}>
+            <i className={`fas fa-list-ul ${classes.markIcon}`} />
+            <span className={classes.text}> {`  ${props.item.title}`}</span>
+            <a href='#!' className={classes.delBtn}>
+                <i className={`fas fa-trash-alt ${classes.markIcon}`}></i>
+            </a>
         </div>
     );
 };

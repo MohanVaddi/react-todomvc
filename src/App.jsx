@@ -26,7 +26,7 @@ const App = () => {
     return (
         <ContextProvider>
             <div className='App App-header'>
-                <h3>ToDo list ({toBeCompleted})</h3>
+                <h3>ToDo List ({toBeCompleted})</h3>
                 <TodoList toBecompletedCount={completedCountHandler} />
             </div>
         </ContextProvider>

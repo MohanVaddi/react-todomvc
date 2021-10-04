@@ -1,6 +1,5 @@
 import React, { useContext, useRef } from 'react';
 import classes from './AddToDoItem.module.css';
-import Button from './UI/Button';
 import TodoContext from '../store/todo-context';
 
 const AddToDoItem = (props) => {
@@ -17,15 +16,14 @@ const AddToDoItem = (props) => {
             isCompleted: false,
         };
         ctx.addItem(item);
-        props.hideForm();
+        inputRef.current.value = '';
     };
 
     return (
         <form onSubmit={submitHandler}>
             <div className={classes.input}>
-                <input type='text' ref={inputRef} />
+                <input type='text' ref={inputRef} placeholder='What needs to be done? ' />
             </div>
-            <Button onClick={submitHandler}>Add</Button>
         </form>
     );
 };

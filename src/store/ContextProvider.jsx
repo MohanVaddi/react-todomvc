@@ -6,7 +6,7 @@ const initialState = {
         {
             id: Math.random(),
             title: 'Learn React',
-            isCompleted: false,
+            isCompleted: true,
         },
         {
             id: Math.random(),
@@ -15,8 +15,8 @@ const initialState = {
         },
         {
             id: Math.random(),
-            title: 'Create Website',
-            isCompleted: true,
+            title: 'React Native',
+            isCompleted: false,
         },
     ],
     completed: 1,
